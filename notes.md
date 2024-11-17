@@ -26,7 +26,7 @@ git remote set-url origin -> set origin (server) address, you can find that on g
 git branch -> list of local branches.
 git branch - r -> list of remote branchces.
 git switch {branch_name} -> switch branch.
-git checkout -b {branch_name} -> switch and create branch, without -b it is also switch branch only.
+git checkout -b {branch_name} -> switch and create branch, without -b it switch branch only.
 git branch -d {branch_name} -> delete branch localy.
 git push <remote-name> <branch-name> -> push local branch to the server, but always when you use pull command you have to specify where you are pulling.
 git push –u <remote-name> <branch-name> - push local branch to the server and creates stream, you just use pull command without specification.
