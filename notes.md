@@ -1,13 +1,13 @@
---- GIT REPO
-
+### --- GIT REPO
+```
 git clone <SSH/HTTPS address> -> it creates local clone of server repo.
 git init -b {repo name}  -> create local repo.
 git fetch -> fetch all information with server, this is not like pull.
 git status -> show status of repo.
 git pull -> update repo from server.
-
---- GIT PUSH PROCESS
-
+```
+### --- GIT PUSH PROCESS
+```
 git add -> add unstaged files to stage for commit.
 git rm --cached {file} -> revert add command for specified file.
 git commit -m "message" -> commit with message, after "add" command.
@@ -15,14 +15,14 @@ git revert {commit ID} -> revert commit.
 git push -> update repo to server.
 
 .gitignore -> create this file in repo directory inside you can write excludes for "add" command. Just write one by line. Like first line *.exe second line temp (directory) etc..
-
---- GIT REMOTE
-
+```
+### --- GIT REMOTE
+```
 git remote -v -> shows origin (server) address.	
 git remote set-url origin -> set origin (server) address, you can find that on github.com, CODE button and there you can choose SSH or HTTPS etc..
-
---- GIT BRANCH
-
+```
+### --- GIT BRANCH
+```
 git branch -> list of local branches.
 git branch - r -> list of remote branchces.
 git switch {branch_name} -> switch branch.
@@ -33,32 +33,32 @@ git push –u <remote-name> <branch-name> - push local branch to the server and 
 git merge {branch_name} -> merge branches, always switch to the main branch or where you want to merge other branch.
 
 git log --decorate--oneline --graph --all -> list of all logs of all branches with graph, without --all shows logs of current branch.
-
-LOCAL -> SERVER
-
+```
+### LOCAL -> SERVER
+```
 git checkout -b {branch_name} -> create new branch and switch to it.
 git push -u origin {branch_name} -> create remote branch with stream
-
-SERVER -> LOCAL
-
+```
+### SERVER -> LOCAL
+```
 git fetch origin -> downloads list of newly created remote branches.
 git switch/checkout {branch_name} -> switch to branch and it will be copied localy.
-
---- GIT TAG
-
+```
+### --- GIT TAG
+```
 git tag -> list all tags in your project.
 git tag -l "v1.8.5*" -> wildcard listing example.
 git show TAG -> Shows tag and it’s annotations.
-
---- Creating Tags
+```
+### --- Creating Tags
 git tag -a TAG -m MESSAGE -> add an annotated tag locally.
 git tag TAG -> Adds a lightweight tag.
 git tag -a TAG -m MESSAGE HASH -> add tag to a specific commit.
 git push origin TAG -> push tag to remote.
 git push origin --tags -> push all tags to remote.
-
---- Modifying Tags
+```
+### --- Modifying Tags
 git tag -f -a TAG -m MESSAGE -> redo a tag locally
 git tag -d TAG -> delete tag locally
 git push origin :refs/tags/TAG -> delete tag on remote
-
+```
