@@ -81,7 +81,7 @@ git merge {branch_name}                # Merges the specified branch into the cu
 ```bash
 git checkout -b {branch_name}                      # Creates a new branch and switches to it.
 git push -u origin {branch_name}                   # Creates a remote branch with a tracking stream.
-git push --set-upstream-to origin/{branch_name}    # Push a branch to origin/branch name.
+git push --set-upstream origin {branch_name}       # Push a branch to origin/branch name.
 ```
 
 ---
