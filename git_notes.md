@@ -14,7 +14,7 @@
 
 ---
 ```bash
-git config --global user.name "Martin Vyhonsky"
+git config --global user.name "MartinV"
 git config --global user.email "martin.vyhonsky@telekom.com"
 ```
 ```bash
