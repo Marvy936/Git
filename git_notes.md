@@ -14,8 +14,8 @@
 
 ---
 ```bash
-git config --global user.name "FIRST_NAME LAST_NAME"
-git config --global user.email "MY_NAME@example.com"
+git config --global user.name "Martin Vyhonsky"
+git config --global user.email "martin.vyhonsky@telekom.com"
 ```
 ```bash
 git push origin {tag}
